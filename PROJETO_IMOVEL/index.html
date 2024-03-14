@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncie seu imóvel para venda aqui!</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Faça o cadastro e venda mais rápido seu imóvel!</h3>
+        </div>
+    </div>
+    <div class="form-container">
+        <div class="form-header">
+            <p>Formulário</p>
+        </div>
+        <div class="form-body">
+            <h1 class="form-title">Venda mais fácil seu imóvel!</h1>
+            <p>Descreva as características e marque as opcionais que ele possui.</p>
+            <form>
+                <div class="box-input">
+                    <label for="title">Título do anúncio <span class="required-field">*</span></label>
+                    <input type="text" name="title" id="title" class="block"
+                        placeholder="Um título para anunciar o seu apartamento" minlength="1" maxlength="30" required />
+                </div>
+                <div class="box-input">
+                    <label for="price"> Preço <span class="required-field">*</span></label>
+                    <input type="number" name="price" id="price" class="block" placeholder="Defina o preço" required />
+                </div>
+                <div class="box-input">
+                    <label for="description">Descrição<span class="required-field">*</span></label>
+                    <textarea name="description" id="description" class="block"
+                        placeholder="Aqui você coloca os detalhes do seu imóvel"></textarea>
+                </div>
+                <div class="box-input">
+                    <label for="endereco">Endereço <span class="required-field">*</span></label>
+                    <input type="text" name="endereco" id="endereco" class="block"
+                        placeholder="Digite o endereço" required />
+                </div>
+                <div class="box-input">
+                    <label for="area">Tamanho <span class="required-field">*</span></label>
+                    <input type="number" name="area" id="area" class="block"
+                        placeholder="Digite o área do imóvel em m²" required />
+                </div>
+                <div class="box-input">
+                    <p>Tipo de imóvel: <span class="required-field">*</span></p>
+                    <input type="radio" name="tipo" id="casa">
+                    <label for="casa">Casa</label>
+                    <input type="radio" name="tipo" id="apartamento">
+                    <label for="apartamento">Apartamento</label>
+                    <input type="radio" name="tipo" id="kitnet">
+                    <label for="kitnet">Kitnet</label>
+                    <input type="radio" name="tipo" id="casa_condominio">
+                    <label for="casa_condominio">Casa de Condomínio</label>
+                    <input type="radio" name="tipo" id="flat">
+                    <label for="flat">Flat</label>
+                    <input type="radio" name="tipo" id="studio">
+                    <label for="studio">Studio</label>
+                </div>
+                <div class="box-input">
+                    <p>Quartos: <span class="required-field">*</span></p>
+                    <input type="radio" name="quarto" id="q1">
+                    <label for="manual">1</label>
+                    <input type="radio" name="quarto" id="q2">
+                    <label for="auto">2</label>
+                    <input type="radio" name="quarto" id="q3">
+                    <label for="auto">3</label>
+                    <input type="radio" name="quarto" id="q4">
+                    <label for="auto">4</label>
+                    <input type="radio" name="quarto" id="q5">
+                    <label for="auto">5</label>
+                </div>
+                <div class="box-input">
+                    <p>Banheiros: <span class="required-field">*</span></p>
+                    <input type="radio" name="banheiro" id="1" >
+                    <label for="um">1</label>
+                    <input type="radio" name="banheiro" id="2">
+                    <label for="dois">2</label>
+                    <input type="radio" name="banheiro" id="3">
+                    <label for="tres">3</label>
+                    <input type="radio" name="banheiro" id="4">
+                    <label for="quatro">4</label>
+                    <input type="radio" name="banheiro" id="5">
+                    <label for="cinco">5</label>
+                </div>
+                <div class="box-input">
+                    <p>Vagas: <span class="required-field">*</span></p>
+                    <input type="radio" name="vagas" id="n1">
+                    <label for="manual">1</label>
+                    <input type="radio" name="vagas" id="n2">
+                    <label for="auto">2</label>
+                    <input type="radio" name="vagas" id="n3">
+                    <label for="auto">3</label>
+                    <input type="radio" name="vagas" id="n4">
+                    <label for="auto">4</label>
+                    <input type="radio" name="vagas" id="n5">
+                    <label for="auto">5</label>
+                </div>
+            
+                <div class="optional-box">
+                    <p>Opcionais</p>
+                    <ul class="optional-list">
+                        <li>
+                            <input type="checkbox" name="optional[]" id="piscina" value="piscina">
+                            <label for="piscina">Piscina</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="optional[]" id="academia" value="academia">
+                            <label for="academia">Academia</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="optional[]" id="lazer" value="lazer">
+                            <label for="lazer">Área de lazer</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="optional[]" id="jogos" value="jogos">
+                            <label for="jogos">Salão de jogos</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="optional-box">
+                    <ul class="optional-list">
+                        <li>
+                            <input type="checkbox" name="optional[]" id="pet" value="pet">
+                            <label for="pet">Aceita pet</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="optional[]" id="mobiliado" value="mobiliado">
+                            <label for="mobiliado">Mobiliado</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="optional[]" id="lavanderia" value="lavanderia">
+                            <label for="lavanderia">Lavanderia</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="optional[]" id="portaria" value="portaria">
+                            <label for="portaria">Portaria 24hs</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box-input">
+                    <p>Fotos do imóvel: <span class="required-field">*</span></p>
+                    <input type="file" multiple accept="image/png, image/jpg" name="images" id="images" required>
+                </div>
+
+
+                <input type="submit" value="Enviar" class="btn-submit"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
